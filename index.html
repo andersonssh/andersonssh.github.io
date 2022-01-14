@@ -46,7 +46,7 @@
                 <div class="rigth mt-4 mb-5">
                     <h1 id="meu-nome">ANDERSON <span>ARAÚJO</span></h1>
                     <div class="profissao mb-3">
-                        Desenvolvedor Full Stack
+                        Desenvolvedor Full Stack · <a href="mailto:andersonaraujo2020.7@gmail.com">andersonaraujo2020.7@gmail.com</a>
                     </div>
                     <div class="midias-sociais mb-3">
                         <a href="https://github.com/andersonssh" target="_blank">Github <i class="fab fa-github"></i></a>
@@ -71,21 +71,21 @@
                         <div class="card mb-3">
                             <h4 class="titulo">Back-End</h4>
                             <p>Cursos aprofundados de Python e Flask. API's Rest, segurança e aplicações web.</p>
-                            <button><i class="fas fa-info-circle"></i> VER CURSOS</button>
+                            <button data-bs-toggle="modal" data-bs-target="#back-end"><i class="fas fa-info-circle"></i> VER CURSOS</button>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3 col-md-4 d-flex justify-content-center">
                         <div class="card mb-3">
                             <h4 class="titulo">Front-End</h4>
                             <p>Cursos de JavaScript. Consumo de API's e conceitos avançados em JS.</p>
-                            <button><i class="fas fa-info-circle"></i> VER CURSOS</button>
+                            <button data-bs-toggle="modal" data-bs-target="#front-end"><i class="fas fa-info-circle"></i> VER CURSOS</button>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3 col-md-4 d-flex justify-content-center">
                         <div class="card mb-3">
-                            <h4 class="titulo">Ferramentas</h4>
+                            <h4 class="titulo">Ferramentas e DevOps</h4>
                             <p>Cursos de versionamento de código com git e conteinerização com docker.</p>
-                            <button><i class="fas fa-info-circle"></i> VER CURSOS</button>
+                            <button data-bs-target="#ferramentas" data-bs-toggle="modal"><i class="fas fa-info-circle"></i> VER CURSOS</button>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3 col-md-4 d-flex justify-content-center">
@@ -158,6 +158,92 @@
         </section>
         
     </div>
+
+    <!--MODAIS-->
+    
+    
+    <!--CURSOS-->
+    <!-- Modal -->
+
+    <!--BACK-END-->
+    <div class="modal fade" id="back-end" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h3 class="modal-title">Back-End</h3>
+                <button type="button" class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body mb-3">
+                    <div>Python <span>FIAP</span> <a href="https://on.fiap.com.br/local/nanocourses/validar-certificado/?chave=872a84a513c61400d2c634623ad6975f" target="_blank"><i class="fas fa-eye"></i></a></div>
+                    <div>Flask desenvolvimento de REST API's <span>DIO</span> <a href="https://certificates.digitalinnovation.one/F141C66C" target="_blank"><i class="fas fa-eye"></i></a></div>
+                    <div>Flask desenvolvimento de aplicações WEB <span>UDEMY</span> <a href="https://www.udemy.com/certificate/UC-ccc41391-7f91-4bf4-86a2-1ad8f39a4d6e/" target="_blank"><i class="fas fa-eye"></i></a></div>
+                    <div>Estrutura de dados e algoritimos <span>DIO</span> <a href="https://certificates.digitalinnovation.one/CAE09A83" target="_blank"><i class="fas fa-eye"></i></a></div>
+                    <div>Segurança da Informação <span>DIO</span> <a href="https://certificates.digitalinnovation.one/1A475C03" target="_blank"><i class="fas fa-eye"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FRONT-END-->
+    <div class="modal fade" id="front-end" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h3 class="modal-title">Front-End</h3>
+                <button type="button" class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body mb-3">
+                    <div>HTML5 E CSS3 <span>DIO</span> <a href="https://certificates.digitalinnovation.one/30617096" target="_blank"><i class="fas fa-eye"></i></a></div>
+                    <div>Bootstrap <span>DIO</span> <a href="https://certificates.digitalinnovation.one/3C9A6169" target="_blank"><i class="fas fa-eye"></i></a></div>
+                    <div>JavaScript <span>DIO</span> 
+                        <div class="btn-group">
+                            <button type="button" class="lista-cursos" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-sort-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://certificates.digitalinnovation.one/2922F3D0" target="_blank">JavaScript</a></li>
+                                <li><a class="dropdown-item" href="https://certificates.digitalinnovation.one/CE66492F" target="_blank">Coleções</a></li>
+                                <li><a class="dropdown-item" href="https://certificates.digitalinnovation.one/91269A5D" target="_blank">Funções</a></li>
+
+                                <li><a class="dropdown-item" href="https://certificates.digitalinnovation.one/9B000FBE" target="_blank">Váriaveis e Tipos</a></li>
+                                <li><a class="dropdown-item" href="https://certificates.digitalinnovation.one/D5F0E0A2" target="_blank">Sintaxe e Operadores</a></li>
+                            </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FERRAMENTAS-->
+    <div class="modal fade" id="ferramentas" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h3 class="modal-title">Ferramentas e DevOps</h3>
+                <button type="button" class="close-modal" data-bs-dismiss="modal"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body mb-3">
+                    <div>Git e GitHub <span>DIO</span> 
+                        <div class="btn-group">
+                            <button type="button" class="lista-cursos" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-sort-down"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://certificates.digitalinnovation.one/B27630C5" target="_blank">Git e Github</a></li>
+                                <li><a class="dropdown-item" href="https://certificates.digitalinnovation.one/B1CFD89E" target="_blank">Branches</a></li>
+                                <li><a class="dropdown-item" href="https://certificates.digitalinnovation.one/5F6F9D76" target="_blank">PullRequest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="display: none;">continua<span>continua</span> <a href="https://certificates.digitalinnovation.one/F141C66C" target="_blank"><i class="fas fa-eye"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--PROJETOS-->
+
+
     <!-- Back to top button -->
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-arrow-up"></i>
