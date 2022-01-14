@@ -53,6 +53,12 @@ button{
     border: 1px solid var(--cor-secundaria);
     margin-right: 10px;
 }
+.midias-sociais a:hover{
+    transition: .3s;
+    color: white;
+    background-color: black;
+    border: 1px solid var(--cor-secundaria-clara);
+}
 
 
 
