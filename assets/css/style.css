@@ -4,17 +4,42 @@
     --cor-secundaria-clara: #9F82FC;
     --cor-texto: #DDDDDD;
 }
+body::-webkit-scrollbar {
+    width: 4px;
+    height: 3px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #241e35;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #6c2da7;
+    border-radius: 20px;
+}
 body{
     background-color: var(--cor-bg-principal);
     color: var(--cor-texto);
     /*PARA TESTES*/
     height: 1200px;
     font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 400;
 }
 h1, h2, h3, h4, h5{
     font-family: 'Saira Extra Condensed', sans-serif;
+}
+h1{
+    font-size: calc(1.700rem + 5.5vw);
+}
+h2{
+    font-size: calc(1.275rem + 2.7vw);
+}
+h3{
+    font-size: calc(1.325rem + 0.9vw);
+}
+hr{
+    color: var(--cor-secundaria-clara)
 }
 a, button{
     color: var(--cor-texto);
@@ -39,12 +64,18 @@ button{
 
 /*CONTEUDO*/
 
+.card{
+    background-color: var(--cor-bg-principal);
+    border: 1px solid var(--cor-secundaria);
+    width: 100%;
+}
+
+
 /*sessao resumo*/
 .sessao-resumo{
     margin-top: 100px;
 }
 #meu-nome{
-    font-size: 56px;
     font-weight: 700;
 }
 #meu-nome span{
@@ -65,8 +96,12 @@ button{
     background-color: black;
     border: 1px solid var(--cor-secundaria-clara);
 }
-
-
+.sessao-resumo .descricao{
+    width: 70%;
+}
+.sessao-resumo .left{
+    display: none;
+}
 
 
 #btn-back-to-top {

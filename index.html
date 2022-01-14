@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" id="top">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,20 +19,17 @@
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-sm">
-        <a href="#" class="navbar-brand"><img src="assets/img/logo.png" alt="Logo Projeto Anônimo"></a>
+        <a href="#top" class="navbar-brand"><img src="assets/img/logo.png" alt="Logo Projeto Anônimo"></a>
         <button id="botao-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
         <div id="menu-principal" class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#top" class="nav-link">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#sobre" class="nav-link">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#certificacoes" class="nav-link desative-menu">Certificações</a>
+                    <a href="#certificados" class="nav-link desative-menu">Certificações</a>
                 </li>
                 <li class="nav-item">
                     <a href="#habilidades" class="nav-link">Habilidades</a>
@@ -45,16 +42,55 @@
     </nav>
     <div class="container">
         <section class="sessao-resumo">
-            <div class="sessao-resumo-conteudo">
-                <h1 id="meu-nome">ANDERSON <span>ARAÚJO</span></h1>
-                <div class="profissao">
-                    Desenvolvedor Full Stack
+            <div class="sessao-resumo-conteudo d-flex justify-content-between">
+                <div class="rigth mt-4 mb-5">
+                    <h1 id="meu-nome">ANDERSON <span>ARAÚJO</span></h1>
+                    <div class="profissao mb-3">
+                        Desenvolvedor Full Stack
+                    </div>
+                    <div class="midias-sociais mb-3">
+                        <a href="https://github.com/andersonssh" target="_blank">Github <i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/andersonssh" target="_blank">Linkedin <i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="descricao mb-3">
+                        <p>Programo por paixão, desenvolvo aplicações web e gosto de problemas difíceis de resolver.</p>
+                    </div>
                 </div>
-                <div class="midias-sociais mt-3">
-                    <a href="https://github.com/andersonssh" target="_blank">Github <i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/andersonssh" target="_blank">Linkedin <i class="fab fa-linkedin"></i></a>
+                <div class="left d-md-block">
+                    <img src="assets/img/logo.png" alt="">
                 </div>
             </div>
+        </section>
+        <hr id="certificados">
+        <section class="sessao-certificados pt-5">
+            <div class="sessao-certificados-conteudo mt-5">
+                <h2>CERTIFICAÇÕES</h2>
+                <div class="row justify-content-center">
+                    <!--Quando em tela pequena - 6. quando em media - 4 quando em grande - 3-->
+                    <div class="col-sm-6 col-lg-3 col-md-4 d-flex justify-content-center">
+                        <div class="card text-center mb-3">
+                            seila
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 col-md-4 d-flex justify-content-center">
+                        <div class="card text-center mb-3">
+                            seila
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 col-md-4 d-flex justify-content-center">
+                        <div class="card text-center mb-3">
+                            seila
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 col-md-4 d-flex justify-content-center">
+                        <div class="card text-center mb-3">
+                            seila
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
         </section>
         
     </div>
