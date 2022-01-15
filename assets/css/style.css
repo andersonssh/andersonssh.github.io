@@ -174,11 +174,12 @@ button{
 .modal-header{
     border-bottom: none;
 }
-.modal-title{
-    
-}
 .modal-body{
     border-bottom: none;
+}
+.modal-body .tecnologias span{
+    padding: 3px 6px;
+    color: white;
 }
 .modal-body span{
     font-size: 12px;
@@ -200,3 +201,19 @@ button{
     font-size: 25px;
 }
 
+.html-color{
+    background-color: #e34c26;
+}
+.css-color{
+    background-color: #563d7c;
+}
+.javascript-color{
+    background-color: #f1e05a;
+    color: black !important;
+}
+.flask-color{
+    background-color: #3572A5;
+}
+.bootstrap-color{
+    background-color: #44aa14;
+}
