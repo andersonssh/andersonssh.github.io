@@ -72,6 +72,7 @@ function animarScroll(){
     }
   })
 }
+animarScroll()
 
 function escrever(elemento){
   elemento.innerHTML = ''
@@ -103,3 +104,4 @@ window.onload = function () {
 setTimeout(() => {
   removerAnimacaoEscrever()
 }, 5000);
+
