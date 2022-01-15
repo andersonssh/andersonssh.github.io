@@ -39,3 +39,63 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// animacoes
+const debounce = function(func, wait, immediate) {
+  let timeout;
+  return function(...args) {
+    const context = this;
+    const later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    const callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
+const meuNome = document.querySelector('#meu-nome')
+let divsAnimar = document.querySelectorAll('[data-animar="after"]')
+
+function removerAnimacaoEscrever(){
+  meuNome.classList.remove('animacao-escrever')
+}
+function animarScroll(){
+  const windowTop = window.pageYOffset + (window.innerHeight * 3) / 4
+  divsAnimar.forEach(function(elemento){
+    console.log('1')
+    if(windowTop > elemento.offsetTop){
+      elemento.classList.add('animate')
+    }else{
+      elemento.classList.remove('animate')
+    }
+  })
+}
+
+function escrever(elemento){
+  elemento.innerHTML = ''
+  const texto = ['A', 'N', 'D', 'E', 'R', 'S', 'O', 'N', ' ', '<span>A</span>', '<span>R</span>', '<span>A</span>', '<span>Ú</span>', '<span>J</span>', '<span>O</span>']
+  texto.forEach((letra, i)=>{
+    setTimeout(function(){
+      elemento.innerHTML += letra
+    }, 75 * i)
+  })
+  const divsResumo = document.querySelectorAll('[data-animar="now"]')
+  setTimeout(() => {
+    for(let i = 0; i < divsResumo.length;i++){
+        setTimeout(() => {
+          divsResumo[i].classList.add('animate')
+        }, 300 * i);
+    }
+  }, 1000);
+
+  // ADICIONA ANIMACAO AO SCROLL SOMENTE APOS AS ANIMACOES INICIAIS
+  window.addEventListener('scroll', debounce(function(){
+    animarScroll()
+  }, 15))
+}
+
+window.onload = function () { 
+  escrever(meuNome)
+}

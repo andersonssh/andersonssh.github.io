@@ -33,6 +33,20 @@ h1, h2, h3, h4, h5{
 h1{
     font-size: calc(1.700rem + 5.5vw);
 }
+.animacao-escrever::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
 h2{
     font-size: calc(1.275rem + 2.7vw);
 }
@@ -90,8 +104,9 @@ button{
     margin: 10px 0;
     text-align: center;
 }
+
 .caixa-blocos button{
-    width: 70%;
+    width: 71%;
     margin: 10px auto;
     background-color: var(--cor-secundaria-escura);
     border: none;
@@ -115,6 +130,9 @@ button{
 /*sessao habilidades*/
 .sessao-habilidades .habilidades{
     padding: 0 10px;
+}
+.sessao-habilidades .row div{
+    width: 261px;
 }
 /*sessao resumo*/
 .sessao-resumo{
@@ -219,4 +237,15 @@ button{
 }
 .bootstrap-color{
     background-color: #44aa14;
+}
+
+/* Animacao */
+[data-animar]{
+    opacity: 0;
+    transition: .3s;
+    transform: translate3d(-50px, 0, 0)
+}
+[data-animar].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0, 0);
 }
