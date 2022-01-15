@@ -99,3 +99,7 @@ function escrever(elemento){
 window.onload = function () { 
   escrever(meuNome)
 }
+
+setTimeout(() => {
+  removerAnimacaoEscrever()
+}, 5000);
