@@ -72,7 +72,9 @@ function animarScroll(){
     }
   })
 }
-animarScroll()
+setTimeout(() => {
+  animarScroll()  
+}, 2200);
 
 function escrever(elemento){
   elemento.innerHTML = ''
