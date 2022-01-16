@@ -127,6 +127,18 @@ button{
     font-size: 15px;
     margin-right: 2px;
 }
+/* sessao experiencia*/
+.sessao-experiencia .tempo{
+    font-size: 0.9rem;
+    margin: 10px 0;
+    color: rgb(192, 190, 190);
+}
+.sessao-experiencia .tecnologias-usadas{
+    color: rgb(163, 129, 167);
+    font-size: 1rem;
+    text-transform: none;
+    margin-bottom: 10px;
+}
 /*sessao habilidades*/
 .sessao-habilidades .habilidades{
     padding: 0 10px;
